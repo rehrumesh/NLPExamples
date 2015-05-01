@@ -1,0 +1,11 @@
+import nltk
+from nltk import FreqDist
+print nltk.corpus.gutenberg.fileids()
+file0 = nltk.corpus.gutenberg.fileids()[0]
+emmatext = nltk.corpus.gutenberg.raw(file0)
+emmatokens = nltk.wordpunct_tokenize(emmatext)
+emmawords = [w.lower() for w in emmatokens]
+
+porter = nltk.PorterStemmer()
+ancaster = nltk.LancasterStemmer()
+emmaregstem = [porter.stem(t) for t in emmatokens]
