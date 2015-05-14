@@ -1,0 +1,4 @@
+clear
+read lexc < cat1.lexc
+compose net
+#;

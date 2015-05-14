@@ -1,0 +1,13 @@
+!replace the ending letter 'u' with respective char
+[s -> s s || _ u .#.]
+.o.
+[q -> q q || _ u .#.]
+.o.
+[k -> k k || _ u .#.]
+.o.
+[m -> m m || _ u .#.]
+.o.
+[n -> n n || _ u .#.]
+.o.
+[l -> l l || _ u .#.]
+;

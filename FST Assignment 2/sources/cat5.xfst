@@ -1,0 +1,6 @@
+clear
+read lexc < cat5.lexc
+read regex < cat5.regex
+turn stack
+compose net
+#;

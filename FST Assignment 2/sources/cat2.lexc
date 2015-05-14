@@ -1,0 +1,18 @@
+Multichar_Symbols
+	+Noun +Masculine +Nominative +Accusative +NominativeOrAccusative +Singular +Plural +Definite +Indefinite
+
+LEXICON Root
+	gæmi	Noun1;
+	kumAra	Noun1;
+	kadi	Noun1;
+	gowi	Noun1;
+	qApasa	Noun1;
+
+LEXICON Noun1
+	+Noun+Masculine:0	Noun2;
+	
+LEXICON Noun2
+	+NominativeOrAccusative+Singular+Definite:yA	#;
+	+Nominative+Singular+Indefinite:yek	#;
+	+Nominative+Plural:yO			#;
+	+Accusative+Plural:yan			#;

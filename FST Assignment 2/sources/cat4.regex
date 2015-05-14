@@ -1,0 +1,9 @@
+!replace 'u' with null char which are ending in 'A', 'ek', 'O', 'an'
+[u -> 0 || _ A .#.]
+.o.
+[u -> 0 || _ e k .#.]
+.o.
+[u -> 0 || _ O .#.]
+.o.
+[u -> 0 || _ a n .#.]
+;

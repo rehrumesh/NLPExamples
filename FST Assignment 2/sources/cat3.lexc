@@ -1,0 +1,18 @@
+Multichar_Symbols
+	+Noun +Mas +Nominative +Accusative +NominativeOrAccusative +Singular +Plural +Definite +Indefinite
+
+LEXICON Root
+	walas	Noun1;
+	puq		Noun1;
+	yak		Noun1;
+	lEn		Noun1;
+	kiMul	Noun1;
+
+LEXICON Noun1
+	+Noun+Mas:0	Noun2;
+	
+LEXICON Noun2
+	+NominativeOrAccusative+Singular+Definite:A	#;
+	+Nominative+Singular+Indefinite:ek		#;
+	+Nominative+Plural:u				#;
+	+Accusative+Plural:un			#;
