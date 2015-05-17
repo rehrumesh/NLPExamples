@@ -25,3 +25,4 @@ wnl = nltk.WordNetLemmatizer()
 emmalemma = [wnl.lemmatize(t) for t in emmawords]
 print(emmalemma[1:100])
 
+
