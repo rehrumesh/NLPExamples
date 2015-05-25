@@ -1,0 +1,11 @@
+S -> NP VP[TYPE=?t]
+NP -> D N | D AP N | AP N
+VP[TYPE=?t] -> V[TYPE=intrans] | V[TYPE=trans] NP | V[TYPE=trans] NP PP | PP[TYPE=intrans] V
+PP -> P NP
+AP -> A | A AP
+A -> "long" | "fierce" | "three" | "tall" | "black"
+V[TYPE=intrans] -> "slept" | "barked"
+V[TYPE=trans] -> "saw" | "chased" 
+D -> "a" | "the"
+N -> "boy" | "girl" | "dog" | "cat" | "garden" | "dogs" | "hair"
+P -> "with" | "into" | "from" | "at"

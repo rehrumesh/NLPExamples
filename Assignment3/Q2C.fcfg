@@ -1,0 +1,35 @@
+# -*- coding: utf-8 -*-
+
+S -> NP[NUM=?n, GEN=?g, PERSON=?t] VP[NUM=?n, GEN=?g, PERSON=?t]
+NP[NUM=?n, GEN=?g, PERSON=?t]  -> N[NUM=?n, GEN=?g, PERSON=?t] | Det N[NUM=?n, GEN=?g, PERSON=?t] | Det A N[NUM=?n, GEN=?g, PERSON=?t] | A N[NUM=?n, GEN=?g, PERSON=?t] |ProN[NUM=?n, GEN=?g, PERSON=?t] | ProperN[NUM=?n, GEN=?g, PERSON=?t]
+VP[NUM=?n, GEN=?g, PERSON=?t] -> V[NUM=?n, GEN=?g, PERSON=?t] |  NP V[NUM=?n, GEN=?g, PERSON=?t]
+
+Det -> "ඒ" | "මේ" | "අර" | "ඔය"
+A -> "උස" | "මිටි" |  "කැත" | "ලස්සන" | "සුදු" | "කළු" | "නරක" | "හොඳ" | "මහත" | "කෙට්ටු"
+
+ProperN[NUM=si, GEN=femi, PERSON=3] -> "නිමේෂා" | "දුල්මිණි" | "අනුෂ්කා" 
+ProperN[NUM=si, GEN=mascu, PERSON=3] -> "රුමේෂ්" | "චාමර" | "ඉසුරු" | "ලහිරු" 
+
+ProN[NUM=si, GEN=null, PERSON=1] -> "මම"
+ProN[NUM=pl, GEN=null, PERSON=1] -> "අපි"
+ProN[NUM=si, GEN=null, PERSON=2] -> "තෝ" | "නුඹ" | "ඔබ"
+ProN[NUM=pl, GEN=null, PERSON=2] -> "තොපි" | "නුඹලා" | "ඔබලා"
+ProN[NUM=si, GEN=femi, PERSON=3] -> "ඇය"
+ProN[NUM=si, GEN=mascu, PERSON=3] -> "ඔහු" | "ඌ"
+ProN[NUM=pl, GEN=null, PERSON=3] -> "ඔවුන්" | "උන්" 
+
+N[NUM=si, GEN=femi, PERSON=3] -> "බැල්ලී" | "පූසි" | "කිරිල්ලි"  
+N[NUM=si, GEN=mascu, PERSON=3] -> "බල්ලා" | "පූසා" |  "කුරුල්ලා" | "කුරුල්ලෙක්"  | "ළමයා"
+N[NUM=pl, GEN=femi, PERSON=3] -> "කිරිල්ලියෝ" |  "ක්‍රීඩිකාවෝ" | "ගුරුවරියෝ" 
+N[NUM=pl, GEN=mascu, PERSON=3] -> "කුරුල්ලෝ " | "මුවෝ"  | "ළමයි"
+N[NUM=si, GEN=null, PERSON=nonL] -> "කවියක්" |"පෑන" |  "පැන්සල" |  "කොලය" | "නිසදැස"
+N[NUM=pl, GEN=null, PERSON=nonL] -> "කවි" | "පෑන්" |  "පැන්සල්" |  "කොල" | "නිසදැස්" 
+
+V[NUM=si, GEN=null, PERSON=1] -> "ලිව්වෙමි" | "දැක්කෙමි" 
+V[NUM=pl, GEN=null, PERSON=1] -> "ලිව්වෙමු" | "දැක්කෙමු" 
+V[NUM=si, GEN=null, PERSON=2] -> "ලිව්වෙහි" | "දැක්කෙහි" 
+V[NUM=pl, GEN=null, PERSON=2] -> "ලිව්වෙහු" | "දැක්කෙහු"
+
+V[NUM=si, GEN=femi, PERSON=3] -> "ලිව්වාය" | "දැක්කාය" 
+V[NUM=si, GEN=mascu, PERSON=3] -> "ලිව්වේය" |  "දැක්කේය"
+V[NUM=pl, PERSON=3] -> "ලිව්වෝය" | "දැක්කෝය"

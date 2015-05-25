@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 __author__ = 'rumesh'
 #python version 3.4
 
@@ -7,7 +9,7 @@ grammar = nltk.data.load('file:Q1B.cfg')
 
 parser = nltk.RecursiveDescentParser(grammar)
 
-sentence = "the three tall black dogs barked"
+sentence = "the girl with long hair slept"
 sent = sentence.split()
 trees = parser.parse(sent)
 
