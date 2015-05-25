@@ -11,7 +11,7 @@
 (c).  How could the grammar defined using the additional rules of (b) above be modified while also making sure that the following sentences are rejected. [Hint: needs to define features to handle these].
 (i).  a cat chased
 (ii).  the boy slept the cat
-(iii).  the dog barked at the cat
+
 2. Define a simple grammar for your mother tongue that is able to handle the following grammar.
 (a).  Able to parse simple SOV structured sentences
 (b).  The S(ubject) and O(bject) should be able to be simple nouns, simple
