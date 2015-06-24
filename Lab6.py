@@ -97,9 +97,9 @@ chunkscore3 = nltk.chunk.ChunkScore()
 ##for fileid in nltk.corpus.treebank_chunk.fileids()[:5]:
 ##    for chunk_struct in nltk.corpus.treebank_chunk.chunked_sents(fileid):
 ##        test_sent = cp3.parse(chunk_struct.flatten())
-##        chunkscore3.score(chunk_struct, test_sent)
+##        chunkscore3.score(chunk_struct, test_sent)nltk.parse_dependency_grammarnltk.parse_dependency_grammar
 
-#print(chunkscore3)
+nltk.parse_dependency_grammar#print(chunkscore3)
 
 # 2. Techniques for Chunking using the Annotated Data for Training: N-gram chunker
 
