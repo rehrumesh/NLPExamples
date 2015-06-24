@@ -34,6 +34,8 @@ print taggedtext
 def findtags(tag_prefix, tagged_text):
     cfd = nltk.ConditionalFreqDist((tag,word) for (word,tag) in tagged_text if tag.startswith(tag_prefix))
     return dict((tag, cfd[tag].keys()[:20]) for tag in cfd.conditions())
+    # if python  3.x use the below line as in python 3 cfd.keys() will returns an iteratable but not indexable object. 
+    # return dict((tag, list(cfd[tag].keys())[:20]) for tag in cfd.conditions())
 
 tagdictNN = findtags('NN', taggedtext)
 for tag in sorted(tagdictNN):
