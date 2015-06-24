@@ -1,3 +1,4 @@
+__author__ = 'rumesh'
 import nltk
 porter = nltk.PorterStemmer()
 lancaster = nltk.LancasterStemmer()

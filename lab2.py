@@ -1,3 +1,4 @@
+__author__ = 'rumesh'
 import nltk
 from nltk import FreqDist
 #print (nltk.corpus.gutenberg.fileids())

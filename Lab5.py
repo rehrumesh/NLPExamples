@@ -13,17 +13,17 @@ P -> "in" | "on" | "by" | "with"
 
 rd_parser = nltk.RecursiveDescentParser(grammar)
 
-senttext = "Mary saw Bob"
-sentlist = senttext.split()
-treelist = rd_parser.parse(sentlist)
-# for tree in treelist:
-#     print tree
-#
-# sent2list = "John saw the man in the park with a telescope".split()
-# for tree in rd_parser.parse(sent2list):
-#     print tree
+##senttext = "Mary saw Bob"
+##sentlist = senttext.split()
+##treelist = rd_parser.parse(sentlist)
+##for tree in treelist:
+##    print(tree)
+##
+##sent2list = "John saw the man in the park with a telescope".split()
+##for tree in rd_parser.parse(sent2list):
+##    print(tree)
 
-
+##
 groucho_grammar = nltk.CFG.fromstring("""
 S -> NP VP
 VP -> V NP | V NP PP
@@ -37,4 +37,6 @@ P -> "in" | "on" | "by" | "with"
 
 sr_parse = nltk.ShiftReduceParser(groucho_grammar)
 sent3 = "Mary saw a dog".split()
-print sr_parse.parse(sent3)
+sent4 = "I shot an elephant in my pajamas".split()
+for tree in sr_parse.parse(sent3):
+    print(tree)
